@@ -133,11 +133,20 @@ db.once('open', async () => {
     quantity: 100
   }
 {
-  name: 'Ravioli Casserole',
+  name: 'Mexican Turkey Roll-Ups',
   category: categories[4]._id,
   description:
-    'The whole family will love the fun, cheesy flavor of this ravioli casserole. This like lasagna—without all the fuss! Timesaving ingredients such as prepared spaghetti sauce and frozen ravioli make it a cinch to fix. Children can help you assemble this one.',
-  image: 'RavioliCarrerole.JPG',
+    'This is the perfect recipe for hungry childern, this is a dish with Mexican flavor and want to use turkey. These roll-ups are fun and so tasty, even kids like them. It is a different use for leftover turkey.',
+  image: 'MexicanTurkeyRollUps.JPG',
+  price: 4.99,
+  quantity: 100
+}
+{
+  name: 'Chicken Stir-Fry Sheet Pan Meal',
+  category: categories[4]._id,
+  description:
+    'When you need an easy chicken dinner the whole family will love, it does not get much better than this Chicken Stir-Fry Sheet Pan Meal. And this recipe is deliciously low in carbs!',
+  image: 'ChickenStirFry.JPG',
   price: 4.99,
   quantity: 100
 }
