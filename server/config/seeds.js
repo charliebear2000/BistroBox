@@ -53,77 +53,95 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'Set of Wooden Spoons',
+      name: 'Chicken Bajane',
       category: categories[1]._id,
       description:
         'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
-      price: 14.99,
+      image: 'chicken-bajane-gf.png',
+      price: 9.99,
       quantity: 100
     },
     {
-      name: 'Camera',
+      name: 'Gluten Free Pizza',
       category: categories[2]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'camera.jpg',
-      price: 399.99,
-      quantity: 30
+        'The best simple recipe for gluten free pizza dough that anyone can, and should, make is here. Even if you never made homemade pizza before, we are bringing back the chewy, crisp-edged pizza you remember!',
+      image: 'gluten-free-pizza.png',
+      price: 9.99,
+      quantity: 100
     },
     {
-      name: 'Tablet',
+      name: 'Pan Fried Catfish',
       category: categories[2]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      price: 199.99,
-      quantity: 30
+        'This recipe for gluten-free beer-battered fried fish produces a crisp, light, and golden end result without the gluten. .',
+      image: 'pan-fried-catfish-with-cajun-tartar-sauce-gf.png',
+      price: 10.99,
+      quantity: 100
     },
     {
-      name: 'Tales at Bedtime',
+      name: 'Tomato Basil Sausage Pasta',
       category: categories[3]._id,
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
+        'Go from stovetop to dinner table in just 30 minutes with my satisfyingly simple and delicious Gluten Free Sausage, Tomato, and Mozzarella Pasta. Featuring fresh tomatoes, mozzarella, spicy and sweet Italian sausage, and a few pantry staples this recipe is a home run for weeknight meals.',
+      image: 'tomato-basil-sausage-pasta-gf.png',
       price: 9.99,
       quantity: 100
     },
     {
-      name: 'Spinning Top',
+      name: 'Greek Quinoa Salad',
       category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
-      price: 1.99,
-      quantity: 1000
-    },
-    {
-      name: 'Set of Plastic Horses',
-      category: categories[4]._id,
-      description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
+      description: 'This healthy Greek Quinoa Salad is an easy make-ahead vegetarian side dish that is ready to rock your plate!',
+      image: 'GreekQuinoaSalad.JPG',
+      price: 9.99,
       quantity: 100
     },
     {
-      name: 'Alphabet Blocks',
+      name: 'Rainbow Veggie Wrap',
       category: categories[4]._id,
       description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
+        'There is definitely a sushi vibe to these kid-friendly wraps, which are stuffed with vegetables, cheese and hummus and then rolled and sliced. Serve them with store-bought green goddess, a creamy herb-filled dressing, to take it up a notch with ease.',
+      image: 'RainbowVeggieWrap.JPG',
       price: 9.99,
-      quantity: 600
+      quantity: 100
+    },
+    {
+      name: 'Vegan Pesto Zoodles',
+      category: categories[4]._id,
+      description:
+        'Zucchini noodles with pesto are delicious low-carb keto pesto pasta made of spiralized zucchini and cooked in a creamy almond milk pesto sauce.',
+      image: 'VeganPestoZoodles.JPG',
+      price: 9.99,
+      quantity: 100
+    },
+    {
+      name: 'Ravioli Casserole',
+      category: categories[4]._id,
+      description:
+        'The whole family will love the fun, cheesy flavor of this ravioli casserole. This like lasagna—without all the fuss! Timesaving ingredients such as prepared spaghetti sauce and frozen ravioli make it a cinch to fix. Children can help you assemble this one.',
+      image: 'RavioliCarrerole.JPG',
+      price: 4.99,
+      quantity: 100
     }
-  ]);
+   {
+    name: 'Tangy Sweet and Sour Meatballs',
+    category: categories[4]._id,
+    description:
+      'A fabulous sauce, green pepper and pineapple chunks transform premade meatballs into something special. Serving them over rice makes for a satisfying main dish.',
+    image: 'TangySweetandSoutMeatballs.JPG',
+    price: 4.99,
+    quantity: 100
+  }
+{
+  name: 'Ravioli Casserole',
+  category: categories[4]._id,
+  description:
+    'The whole family will love the fun, cheesy flavor of this ravioli casserole. This like lasagna—without all the fuss! Timesaving ingredients such as prepared spaghetti sauce and frozen ravioli make it a cinch to fix. Children can help you assemble this one.',
+  image: 'RavioliCarrerole.JPG',
+  price: 4.99,
+  quantity: 100
+}
+]);
 
   console.log('products seeded');
 
