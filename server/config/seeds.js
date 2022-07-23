@@ -5,12 +5,11 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
-  ]);
+    { name: 'All Recipes' },
+    { name: 'Gluten-Free' },
+    { name: 'Vegetarian' },
+    { name: 'Kid-Approved' },
+   ]);
 
   console.log('categories seeded');
 
@@ -18,40 +17,40 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: 'Asparagus Shrimp Pasta',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
+        'To keep it light, I load it up with lean protein such as shrimp and lots of vegetables!',
+      image: 'AsparagusShrimpPasta.JPG',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 10.99,
+      quantity: 100
     },
     {
-      name: 'Canned Coffee',
+      name: 'Hawaiian Pork Chops',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'canned-coffee.jpg',
+        'This is so easy, tastes just like Hawaiian pizza, and I usually have all ingredients on hand.',
+      image: 'HawaiianPorkChop.JPG',
       category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
+      price: 9.99,
+      quantity: 100
     },
     {
-      name: 'Toilet Paper',
+      name: 'Ground Chicken Tacos with Poblanos',
       category: categories[1]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
-      price: 7.99,
-      quantity: 20
+        'These 20 minute ground chicken tacos with poblano peppers come together so fast for an easy healthy dinner recipe. So whether you are using it as a family-friendly weeknight dinner recipe or a festive Taco Tuesday, you will want to keep this recipe in your back pocket!',
+      image: 'GroundChickenTaco.JPG',
+      price: 9.99,
+      quantity: 100
     },
     {
-      name: 'Handmade Soap',
+      name: 'Crispy Mongolian Beef',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
-      price: 3.99,
-      quantity: 50
+        'This Mongolian Beef recipe is super easy to make and uses simple, readily available ingredients! Whip this up in under 20 minutes and have the perfect mid-week dinner meal!',
+      image: 'CrispyMongolianBeef.JPG',
+      price: 10.99,
+      quantity: 100
     },
     {
       name: 'Set of Wooden Spoons',
