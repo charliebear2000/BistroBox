@@ -9,7 +9,7 @@ db.once('open', async () => {
     { name: 'Gluten-Free' },
     { name: 'Vegetarian' },
     { name: 'Kid-Approved' },
-   ]);
+  ]);
 
   console.log('categories seeded');
 
@@ -122,35 +122,35 @@ db.once('open', async () => {
       image: 'RavioliCarrerole.JPG',
       price: 4.99,
       quantity: 100
+    },
+    {
+      name: 'Tangy Sweet and Sour Meatballs',
+      category: categories[4]._id,
+      description:
+        'A fabulous sauce, green pepper and pineapple chunks transform premade meatballs into something special. Serving them over rice makes for a satisfying main dish.',
+      image: 'TangySweetandSoutMeatballs.JPG',
+      price: 4.99,
+      quantity: 100
+    },
+    {
+      name: 'Mexican Turkey Roll-Ups',
+      category: categories[4]._id,
+      description:
+        'This is the perfect recipe for hungry childern, this is a dish with Mexican flavor and want to use turkey. These roll-ups are fun and so tasty, even kids like them. It is a different use for leftover turkey.',
+      image: 'MexicanTurkeyRollUps.JPG',
+      price: 4.99,
+      quantity: 100
+    },
+    {
+      name: 'Chicken Stir-Fry Sheet Pan Meal',
+      category: categories[4]._id,
+      description:
+        'When you need an easy chicken dinner the whole family will love, it does not get much better than this Chicken Stir-Fry Sheet Pan Meal. And this recipe is deliciously low in carbs!',
+      image: 'ChickenStirFry.JPG',
+      price: 4.99,
+      quantity: 100
     }
-   {
-    name: 'Tangy Sweet and Sour Meatballs',
-    category: categories[4]._id,
-    description:
-      'A fabulous sauce, green pepper and pineapple chunks transform premade meatballs into something special. Serving them over rice makes for a satisfying main dish.',
-    image: 'TangySweetandSoutMeatballs.JPG',
-    price: 4.99,
-    quantity: 100
-  }
-{
-  name: 'Mexican Turkey Roll-Ups',
-  category: categories[4]._id,
-  description:
-    'This is the perfect recipe for hungry childern, this is a dish with Mexican flavor and want to use turkey. These roll-ups are fun and so tasty, even kids like them. It is a different use for leftover turkey.',
-  image: 'MexicanTurkeyRollUps.JPG',
-  price: 4.99,
-  quantity: 100
-}
-{
-  name: 'Chicken Stir-Fry Sheet Pan Meal',
-  category: categories[4]._id,
-  description:
-    'When you need an easy chicken dinner the whole family will love, it does not get much better than this Chicken Stir-Fry Sheet Pan Meal. And this recipe is deliciously low in carbs!',
-  image: 'ChickenStirFry.JPG',
-  price: 4.99,
-  quantity: 100
-}
-]);
+  ]);
 
   console.log('products seeded');
 
