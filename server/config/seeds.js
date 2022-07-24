@@ -36,7 +36,7 @@ db.once('open', async () => {
     },
     {
       name: 'Ground Chicken Tacos with Poblanos',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'These 20 minute ground chicken tacos with poblano peppers come together so fast for an easy healthy dinner recipe. So whether you are using it as a family-friendly weeknight dinner recipe or a festive Taco Tuesday, you will want to keep this recipe in your back pocket!',
       image: 'GroundChickenTaco.JPG',
@@ -45,7 +45,7 @@ db.once('open', async () => {
     },
     {
       name: 'Crispy Mongolian Beef',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'This Mongolian Beef recipe is super easy to make and uses simple, readily available ingredients! Whip this up in under 20 minutes and have the perfect mid-week dinner meal!',
       image: 'CrispyMongolianBeef.JPG',
@@ -63,7 +63,7 @@ db.once('open', async () => {
     },
     {
       name: 'Gluten Free Pizza',
-      category: categories[2]._id,
+      category: categories[1]._id,
       description:
         'The best simple recipe for gluten free pizza dough that anyone can, and should, make is here. Even if you never made homemade pizza before, we are bringing back the chewy, crisp-edged pizza you remember!',
       image: 'gluten-free-pizza.png',
@@ -72,7 +72,7 @@ db.once('open', async () => {
     },
     {
       name: 'Pan Fried Catfish',
-      category: categories[2]._id,
+      category: categories[1]._id,
       description:
         'This recipe for gluten-free beer-battered fried fish produces a crisp, light, and golden end result without the gluten. .',
       image: 'pan-fried-catfish-with-cajun-tartar-sauce-gf.png',
@@ -81,7 +81,7 @@ db.once('open', async () => {
     },
     {
       name: 'Tomato Basil Sausage Pasta',
-      category: categories[3]._id,
+      category: categories[1]._id,
       description:
         'Go from stovetop to dinner table in just 30 minutes with my satisfyingly simple and delicious Gluten Free Sausage, Tomato, and Mozzarella Pasta. Featuring fresh tomatoes, mozzarella, spicy and sweet Italian sausage, and a few pantry staples this recipe is a home run for weeknight meals.',
       image: 'tomato-basil-sausage-pasta-gf.png',
@@ -90,7 +90,7 @@ db.once('open', async () => {
     },
     {
       name: 'Greek Quinoa Salad',
-      category: categories[3]._id,
+      category: categories[2]._id,
       description: 'This healthy Greek Quinoa Salad is an easy make-ahead vegetarian side dish that is ready to rock your plate!',
       image: 'GreekQuinoaSalad.JPG',
       price: 9.99,
@@ -98,7 +98,7 @@ db.once('open', async () => {
     },
     {
       name: 'Rainbow Veggie Wrap',
-      category: categories[3]._id,
+      category: categories[2]._id,
       description:
         'There is definitely a sushi vibe to these kid-friendly wraps, which are stuffed with vegetables, cheese and hummus and then rolled and sliced. Serve them with store-bought green goddess, a creamy herb-filled dressing, to take it up a notch with ease.',
       image: 'RainbowVeggieWrap.JPG',
@@ -107,10 +107,19 @@ db.once('open', async () => {
     },
     {
       name: 'Vegan Pesto Zoodles',
-      category: categories[3]._id,
+      category: categories[2]._id,
       description:
         'Zucchini noodles with pesto are delicious low-carb keto pesto pasta made of spiralized zucchini and cooked in a creamy almond milk pesto sauce.',
       image: 'VeganPestoZoodles.JPG',
+      price: 9.99,
+      quantity: 100
+    },
+    {
+      name: 'Ratatouille',
+      category: categories[2]._id,
+      description:
+      'This is the best French summer vegetable stew that you can stir up in one pot within 30 minutes. I say to stir up because the traditional ratatouille is cooked on a stovetop and NOT BAKED. It is a quick and easy dish to make from colorful summer vegetables like fresh tomato, zucchini, eggplant, and bell pepper. It is naturally vegan and vegetarian.',      
+      image: 'VeganRatatouille.JPG',
       price: 9.99,
       quantity: 100
     },
@@ -119,7 +128,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'The whole family will love the fun, cheesy flavor of this ravioli casserole. This like lasagna—without all the fuss! Timesaving ingredients such as prepared spaghetti sauce and frozen ravioli make it a cinch to fix. Children can help you assemble this one.',
-      image: 'RavioliCarrerole.JPG',
+      image: 'RavioliCasserole.JPG',
       price: 4.99,
       quantity: 100
     },
