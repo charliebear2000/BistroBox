@@ -90,7 +90,7 @@ db.once('open', async () => {
     },
     {
       name: 'Greek Quinoa Salad',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description: 'This healthy Greek Quinoa Salad is an easy make-ahead vegetarian side dish that is ready to rock your plate!',
       image: 'GreekQuinoaSalad.JPG',
       price: 9.99,
@@ -98,7 +98,7 @@ db.once('open', async () => {
     },
     {
       name: 'Rainbow Veggie Wrap',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'There is definitely a sushi vibe to these kid-friendly wraps, which are stuffed with vegetables, cheese and hummus and then rolled and sliced. Serve them with store-bought green goddess, a creamy herb-filled dressing, to take it up a notch with ease.',
       image: 'RainbowVeggieWrap.JPG',
@@ -107,7 +107,7 @@ db.once('open', async () => {
     },
     {
       name: 'Vegan Pesto Zoodles',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'Zucchini noodles with pesto are delicious low-carb keto pesto pasta made of spiralized zucchini and cooked in a creamy almond milk pesto sauce.',
       image: 'VeganPestoZoodles.JPG',
@@ -116,7 +116,7 @@ db.once('open', async () => {
     },
     {
       name: 'Ravioli Casserole',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'The whole family will love the fun, cheesy flavor of this ravioli casserole. This like lasagna—without all the fuss! Timesaving ingredients such as prepared spaghetti sauce and frozen ravioli make it a cinch to fix. Children can help you assemble this one.',
       image: 'RavioliCarrerole.JPG',
@@ -125,7 +125,7 @@ db.once('open', async () => {
     },
     {
       name: 'Tangy Sweet and Sour Meatballs',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'A fabulous sauce, green pepper and pineapple chunks transform premade meatballs into something special. Serving them over rice makes for a satisfying main dish.',
       image: 'TangySweetandSoutMeatballs.JPG',
@@ -134,7 +134,7 @@ db.once('open', async () => {
     },
     {
       name: 'Mexican Turkey Roll-Ups',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'This is the perfect recipe for hungry childern, this is a dish with Mexican flavor and want to use turkey. These roll-ups are fun and so tasty, even kids like them. It is a different use for leftover turkey.',
       image: 'MexicanTurkeyRollUps.JPG',
@@ -143,7 +143,7 @@ db.once('open', async () => {
     },
     {
       name: 'Chicken Stir-Fry Sheet Pan Meal',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'When you need an easy chicken dinner the whole family will love, it does not get much better than this Chicken Stir-Fry Sheet Pan Meal. And this recipe is deliciously low in carbs!',
       image: 'ChickenStirFry.JPG',
