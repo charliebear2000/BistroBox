@@ -22,7 +22,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
-      category: categories[0]._id,
+      category: categories[1]._id,
       price: 2.99,
       quantity: 500
     },
@@ -37,7 +37,7 @@ db.once('open', async () => {
     },
     {
       name: 'Toilet Paper',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
       image: 'toilet-paper.jpg',
