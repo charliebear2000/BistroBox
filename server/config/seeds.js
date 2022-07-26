@@ -21,7 +21,7 @@ db.once("open", async () => {
       name: "Asparagus Shrimp Pasta",
       description:
         "This is a healthy, hearty, yet elegant recipe that is good enough for guests. It is also very easy and can be made with little notice.",
-      image: "AsparagusShrimpPastas.jpg",
+      image: "AsparagusShrimpPasta.jpg",
       category: categories[0]._id,
       price: 10.99
     },
@@ -34,11 +34,11 @@ db.once("open", async () => {
       price: 9.99
     },
     {
-      name: "Ground Chicken Tacos with Poblanos",
+      name: "Ground Chicken Tacos",
       category: categories[0]._id,
       description:
         "These 20 minute ground chicken tacos with poblano peppers come together so fast for an easy and healthy dinner recipe.",
-      image: "GroundChickenTacos.JPG",
+      image: "GroundChickenTaco.JPG",
       price: 9.99
     },
     {
@@ -126,7 +126,7 @@ db.once("open", async () => {
       category: categories[3]._id,
       description:
         "A fabulous sauce, green peppers, and pineapple chunks transform premade meatballs into something special.",
-      image: "TangySweetandSoutMeatball.jpg",
+      image: "TangySweetandSoutMeatballs.jpg",
       price: 4.99
     },
     {
@@ -138,11 +138,11 @@ db.once("open", async () => {
       price: 4.99
     },
     {
-      name: "Chicken Stir-Fry Sheet Pan Meal",
+      name: "Chicken Stir-Fry Sheet",
       category: categories[3]._id,
       description:
         "When you need an easy chicken dinner the whole family will love, it doesn't get much better than this Chicken Stir-Fry Sheet Pan Meal. And this recipe is deliciously low in carbs!",
-      image: "ChickenStirFrys.JPG",
+      image: "ChickenStirFry.jpg",
       price: 4.99
     },
     {
@@ -150,7 +150,7 @@ db.once("open", async () => {
       category: categories[4]._id,
       description:
         "This fluffy, warm chocolate chip mug cake bakes in the microwave and has all the decadence you want from a dessert in a single serving! With just a few ingredients, this mug cake whips up in mere minutes and will totally satisfy your chocolatey dessert cravings!",
-      image: "chocolate-chip-mug-cake.png",
+      image: "chocolate-chip-mug-cake.jpg",
       price: 2.99
     },
     {
@@ -158,7 +158,7 @@ db.once("open", async () => {
       category: categories[4]._id,
       description:
         "This easy chocolate mug cake is moist, fluffy, and makes a wonderful dessert for 1 (that means no sharing)! This cake requires no eggs, and it's so simple you just combine the ingredients and pop it in the microwave for a couple of minutes!",
-      image: "chocolate-mug-cake.png",
+      image: "chocolate-mug-cake.jpg",
       price: 2.99
     },
     {
@@ -166,7 +166,7 @@ db.once("open", async () => {
       category: categories[4]._id,
       description:
         "This moist and fluffy coffee cake mug cake is an easy single-serving dessert that can be made in your microwave in just 2 minutes! It is a deliciously fluffy cinnamon cake with a cinnamon crumb topping, and it's exactly what you need when those dessert cravings strike!",
-      image: "coffee-cake-mug-cake.png",
+      image: "coffee-cake-mug-cake.jpg",
       price: 2.99
     },
     {
@@ -174,7 +174,7 @@ db.once("open", async () => {
       category: categories[4]._id,
       description:
         "This is the perfect recipe for hungry childern, this is a dish with Mexican flavor and want to use turkey. These roll-ups are fun and so tasty, even kids like them. It is a different use for leftover turkey.",
-      image: "vanilla-mug-cake.png",
+      image: "vanilla-mug-cake.jpg",
       price: 2.99
     }
   ]);
