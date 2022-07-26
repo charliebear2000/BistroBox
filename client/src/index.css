@@ -28,7 +28,7 @@ div.intro {
   font-size: 1.75rem;
   border: #f3a847 4px solid;
   font-weight: bold;
-  max-width: 60%;
+  max-width: 70%;
 }
 div.a {
   position: relative;
@@ -103,10 +103,6 @@ h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
 }
-
-/* h5 {
-
-} */
 
 h6 {
   font-family: "Scope One", sans-serif;
