@@ -38,7 +38,7 @@ db.once("open", async () => {
       category: categories[0]._id,
       description:
         "These 20 minute ground chicken tacos with poblano peppers come together so fast for an easy and healthy dinner recipe.",
-      image: "GroundChickenTaco.JPG",
+      image: "GroundChickenTacos.JPG",
       price: 9.99
     },
     {
