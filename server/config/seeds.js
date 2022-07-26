@@ -21,7 +21,7 @@ db.once("open", async () => {
       name: "Asparagus Shrimp Pasta",
       description:
         "This is a healthy, hearty, yet elegant recipe that is good enough for guests. It is also very easy and can be made with little notice.",
-      image: "AsparagusShrimpPastas.jpg",
+      image: "AsparagusShrimpPasta.jpg",
       category: categories[0]._id,
       price: 10.99
     },
@@ -34,7 +34,7 @@ db.once("open", async () => {
       price: 9.99
     },
     {
-      name: "Ground Chicken Tacos with Poblanos",
+      name: "Ground Chicken Tacos",
       category: categories[0]._id,
       description:
         "These 20 minute ground chicken tacos with poblano peppers come together so fast for an easy and healthy dinner recipe.",
@@ -138,11 +138,11 @@ db.once("open", async () => {
       price: 4.99
     },
     {
-      name: "Chicken Stir-Fry Sheet Pan Meal",
+      name: "Chicken Stir-Fry Sheet",
       category: categories[3]._id,
       description:
         "When you need an easy chicken dinner the whole family will love, it doesn't get much better than this Chicken Stir-Fry Sheet Pan Meal. And this recipe is deliciously low in carbs!",
-      image: "ChickenStirFrys.JPG",
+      image: "ChickenStirFry.jpg",
       price: 4.99
     },
     {
