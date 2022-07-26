@@ -56,7 +56,8 @@ const About = () => {
                 kits that cater to people with <br></br>
                 different dietary needs. My daughter has Celiac disease so the
                 fact that we can find <br></br>
-                delicious meals that meet her condition" <br></br>- Kendra
+                delicious meals that meet her condition is really a game
+                changer." <br></br>- Kendra
               </p>
             </div>
           </div>
