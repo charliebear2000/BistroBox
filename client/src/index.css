@@ -23,6 +23,13 @@ html,
 body {
   min-height: 100%;
 }
+div.intro {
+  font-family: "Scope One", sans-serif;
+  font-size: 1.75rem;
+  border: #f3a847 4px solid;
+  font-weight: bold;
+  max-width: 60%;
+}
 div.a {
   position: relative;
   width: 400px;
@@ -59,7 +66,7 @@ div.d {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Scope One', sans-serif;
+  font-family: "Scope One", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -78,35 +85,30 @@ h6 {
 }
 
 h1 {
-  font-family: 'Montserrat', serif;
+  font-family: "Montserrat", serif;
   font-size: 3rem;
 }
 
 h2 {
-  font-family: 'Yantramanav', sans-serif;
+  font-family: "Yantramanav", sans-serif;
   font-size: 2rem;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.75rem;
 }
 
 h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
 }
 
 h5 {
-  font-family: 'Scope One', sans-serif;
-  font-size: 1.25rem;
-  border: #f3a847 4px solid;
-  font-weight: bold;
-  max-width: 60%;
 }
 
 h6 {
-  font-family: 'Scope One', sans-serif;
+  font-family: "Scope One", sans-serif;
   font-size: 1rem;
 }
 
@@ -278,20 +280,22 @@ input:focus {
 }
 
 .menu-btn:hover {
-  opacity: .8;
+  opacity: 0.8;
   border-bottom: var(--primary) solid 2.25px;
 }
 
-.meal-name{
+.meal-name {
   font-weight: bold;
 }
 
-.cart-btn, .submit-btn {
+.cart-btn,
+.submit-btn {
   background-color: var(--tertiary);
   color: var(--light);
 }
 
-.cart-btn:hover, .submit-btn:hover {
+.cart-btn:hover,
+.submit-btn:hover {
   background-color: var(--secondary);
   /* color: var(--dark); */
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
