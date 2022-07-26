@@ -19,13 +19,13 @@ const About = () => {
         <div className="intro">
           <h5>
             It brings us great pleasure to present to you the easiest meal kit
-            ordering platform on the market.<br></br> We know that life can be
-            very busy, between work, school activities, kids sports, and
-            whatever curveball<br></br> that life throws at you, having time to
-            cook and prep a meal for the family can often times not be feasible.{" "}
+            ordering platform on the market. We know that life can be very busy,
+            between work, school activities, kids sports, and whatever curveball
+            that life throws at you, having time to cook and prep a meal for the
+            family can often times not be feasible.
             <br></br>Bistro Box is here to lend you a helping hand, while
             bringing you meals that will accomodate your specific dietary
-            restrictions.
+            restrictions!
           </h5>
         </div>
         <div className="a">
