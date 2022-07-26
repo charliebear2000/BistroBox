@@ -1,9 +1,11 @@
 :root {
-  --primary: #232f3e;
-  --secondary: #f3a847;
-  --tertiary: #b12704;
-  --light: #fafafa;
-  --dark: #272f32;
+  --primary: #062f66;
+  --secondary: #ef8696;
+  /* --tertiary: #723d46; */
+  --tertiary: #8d4a55;
+  --light: #d7e3ef;
+  --medium: #6985c0;
+  --dark: #366aac;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -57,7 +59,7 @@ div.d {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Karla", sans-serif;
+  font-family: 'Scope One', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -70,30 +72,33 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Rubik", sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
 }
 
 h1 {
-  font-size: 2.25rem;
-  font-weight: bolder;
+  font-family: 'Montserrat', serif;
+  font-size: 3rem;
 }
 
 h2 {
+  font-family: 'Yantramanav', sans-serif;
   font-size: 2rem;
 }
 
 h3 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.75rem;
 }
 
 h4 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
 }
 
 h5 {
+  font-family: 'Scope One', sans-serif;
   font-size: 1.25rem;
   border: #f3a847 4px solid;
   font-weight: bold;
@@ -101,6 +106,7 @@ h5 {
 }
 
 h6 {
+  font-family: 'Scope One', sans-serif;
   font-size: 1rem;
 }
 
@@ -110,37 +116,35 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: var(--primary);
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
+  color: var(--tertiary);
 }
 
 header {
-  background: var(--primary);
+  background: var(--light);
 }
 
 header a {
-  color: var(--light);
+  color: var(--dark);
+}
+
+ul {
+  list-style-type: none;
 }
 
 button {
-  font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
-}
-
-button:hover {
-  opacity: 0.8;
 }
 
 button[disabled] {
@@ -242,11 +246,67 @@ input:focus {
 .error-text {
   color: var(--error);
 }
+
 .cell {
   border: #f3a847 3px solid;
 }
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.menu-types {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: var(--dark) solid 2px;
+}
+
+.menu-btn {
+  background-color: transparent;
+  color: var(--medium);
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-btn:hover {
+  opacity: .8;
+  border-bottom: var(--primary) solid 2.25px;
+}
+
+.meal-name{
+  font-weight: bold;
+}
+
+.cart-btn {
+  background-color: var(--tertiary);
+  color: var(--light);
+}
+
+.cart-btn:hover {
+  background-color: var(--secondary);
+  /* color: var(--dark); */
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
+  }
+
+  .menu-types {
+    flex-direction: column;
+  }
+
+  .menu-title {
+    font-size: 38px;
   }
 }

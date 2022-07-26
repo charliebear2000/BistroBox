@@ -42,10 +42,11 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          <span role="img" aria-label="shopping bag">
+          {/* <span role="img" aria-label="shopping bag">
             🛍️
           </span>
-          Bistro Box
+          Bistro Box */}
+          <img src="/images/BistroBox.png" alt="Bistro Box" />
         </Link>
       </h1>
 
