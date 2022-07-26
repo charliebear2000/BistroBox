@@ -21,6 +21,38 @@ html,
 body {
   min-height: 100%;
 }
+div.a {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid red;
+}
+div.b {
+  position: absolute;
+
+  left: auto;
+  width: 100%;
+  height: 100%;
+  border: 3px solid orange;
+}
+div.c {
+  position: absolute;
+  left: 450px;
+  right: auto;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  border: 3px solid green;
+}
+div.d {
+  position: absolute;
+  left: auto;
+  right: -850px;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  border: 3px solid blue;
+}
 
 body {
   margin: 0;
