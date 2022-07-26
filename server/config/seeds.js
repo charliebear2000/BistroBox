@@ -126,7 +126,7 @@ db.once("open", async () => {
       category: categories[3]._id,
       description:
         "A fabulous sauce, green peppers, and pineapple chunks transform premade meatballs into something special.",
-      image: "TangySweetAndSourMeatballs.JPG",
+      image: "TangySweetandSoutMeatball.jpg",
       price: 4.99
     },
     {
@@ -142,7 +142,7 @@ db.once("open", async () => {
       category: categories[3]._id,
       description:
         "When you need an easy chicken dinner the whole family will love, it doesn't get much better than this Chicken Stir-Fry Sheet Pan Meal. And this recipe is deliciously low in carbs!",
-      image: "ChickenStirFry.JPG",
+      image: "ChickenStirFrys.JPG",
       price: 4.99
     },
     {
