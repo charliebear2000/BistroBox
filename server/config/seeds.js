@@ -50,11 +50,11 @@ db.once("open", async () => {
       price: 10.99
     },
     {
-      name: "Chicken Bajane",
+      name: "Beef Stew",
       category: categories[1]._id,
       description:
-        "A Provencal stew filled with the hearty flavors of carrots, fennel, leeks, chickpeas, and thyme.",
-      image: "chicken-bajane-gf.jpg",
+        "This gluten-free beef stew is also beefless! This stew is an easy healthy plant-base version of a classic comfor meal we all grew up with.",
+      image: "Beefstew.jpg",
       price: 9.99
     },
     {
