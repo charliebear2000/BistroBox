@@ -21,7 +21,7 @@ db.once("open", async () => {
       name: "Asparagus Shrimp Pasta",
       description:
         "This is a healthy, hearty, yet elegant recipe that is good enough for guests. It is also very easy and can be made with little notice.",
-      image: "AsparagusShrimpPasta.JPG",
+      image: "AsparagusShrimpPastas.jpg",
       category: categories[0]._id,
       price: 10.99
     },
@@ -54,7 +54,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description:
         "A Provencal stew filled with the hearty flavors of carrots, fennel, leeks, chickpeas, and thyme.",
-      image: "chicken-bajane-gf.png",
+      image: "chicken-bajane-gf.jpg",
       price: 9.99
     },
     {
@@ -62,7 +62,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description:
         "You won't miss the gluten in this crust! Topped with cheesy goodness and turkey pepperoni, this pizza is bound to be a hit with the whole family.",
-      image: "gluten-free-pizza.png",
+      image: "gluten-free-pizza.jpg",
       price: 9.99
     },
     {
@@ -70,7 +70,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description:
         "Instead of a traditional crunchy coating, you use a Cajun spice blend to season the fish and pan-fried it in a pan coated with cooking spray, which helps keep calories in check and is less involved than deep-fat frying.",
-      image: "pan-fried-catfish-with-cajun-tartar-sauce-gf.png",
+      image: "pan-fried-catfish-with-cajun-tartar-sauce-gf.jpg",
       price: 10.99
     },
     {
@@ -78,7 +78,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description:
         "Ripe, summer tomatoes are juicy and delicious in this pasta dish, with no seeding or peeling necessary.",
-      image: "tomato-basil-sausage-pasta-gf.png",
+      image: "tomato-basil-sausage-pasta-gf.jpg",
       price: 9.99
     },
     {
