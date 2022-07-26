@@ -5,11 +5,11 @@ db.once("open", async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: "All Recipes" },
     { name: "Date Night" },
     { name: "Gluten-Free" },
     { name: "Vegetarian" },
     { name: "Kid-Approved" },
+    { name: "Dessert" },
   ]);
 
   console.log("categories seeded");
@@ -20,48 +20,24 @@ db.once("open", async () => {
     {
       name: "Asparagus Shrimp Pasta",
       description:
-        "To keep it light, I load it up with lean protein such as shrimp and lots of vegetables!",
+        "This is a healthy, hearty, yet elegant recipe that is good enough for guests. It is also very easy and can be made with little notice.",
       image: "AsparagusShrimpPasta.JPG",
       category: categories[0]._id,
-      price: 10.99,
-    },
-    {
-      name: "Asparagus Shrimp Pasta",
-      description:
-        "To keep it light, I load it up with lean protein such as shrimp and lots of vegetables!",
-      image: "AsparagusShrimpPasta.JPG",
-      category: categories[1]._id,
-      price: 10.99,
+      price: 10.99
     },
     {
       name: "Hawaiian Pork Chops",
       description:
-        "This is so easy, tastes just like Hawaiian pizza, and I usually have all ingredients on hand.",
+        "Quick and Easy Hawaiian Pork Chops. Pan fried pork chops simmered in a sweet and tangy Hawaiian sauce. Ready in under 25 minutes!",
       image: "HawaiianPorkChop.JPG",
       category: categories[0]._id,
-      price: 9.99
-    },
-    {
-      name: "Hawaiian Pork Chops",
-      description:
-        "This is so easy, tastes just like Hawaiian pizza, and I usually have all ingredients on hand.",
-      image: "HawaiianPorkChop.JPG",
-      category: categories[1]._id,
       price: 9.99
     },
     {
       name: "Ground Chicken Tacos with Poblanos",
       category: categories[0]._id,
       description:
-        "These 20 minute ground chicken tacos with poblano peppers come together so fast for an easy healthy dinner recipe. So whether you are using it as a family-friendly weeknight dinner recipe or a festive Taco Tuesday, you will want to keep this recipe in your back pocket!",
-      image: "GroundChickenTaco.JPG",
-      price: 9.99
-    },
-    {
-      name: "Ground Chicken Tacos with Poblanos",
-      category: categories[1]._id,
-      description:
-        "These 20 minute ground chicken tacos with poblano peppers come together so fast for an easy healthy dinner recipe. So whether you are using it as a family-friendly weeknight dinner recipe or a festive Taco Tuesday, you will want to keep this recipe in your back pocket!",
+        "These 20 minute ground chicken tacos with poblano peppers come together so fast for an easy and healthy dinner recipe.",
       image: "GroundChickenTaco.JPG",
       price: 9.99
     },
@@ -69,93 +45,45 @@ db.once("open", async () => {
       name: "Crispy Monglian Beef",
       category: categories[0]._id,
       description:
-        "This Mongolian Beef recipe is super easy to make and uses simple, readily available ingredients! Whip this up in under 20 minutes and have the perfect mid-week dinner meal!",
+        "This Mongolian Beef recipe is super easy to make. Whip this up in under 20 minutes and have the perfect mid-week dinner meal!",
       image: "CrispyMongolianBeef.JPG",
       price: 10.99
     },
     {
-      name: "Crispy Monglian Beef",
+      name: "Chicken Bajane",
       category: categories[1]._id,
       description:
-        "This Mongolian Beef recipe is super easy to make and uses simple, readily available ingredients! Whip this up in under 20 minutes and have the perfect mid-week dinner meal!",
-      image: "CrispyMongolianBeef.JPG",
-      price: 10.99
-    },
-    {
-      name: "Chicken Bajane",
-      category: categories[0]._id,
-      description:
-        "Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.",
-      image: "chicken-bajane-gf.png",
-      price: 9.99
-    },
-    {
-      name: "Chicken Bajane",
-      category: categories[2]._id,
-      description:
-        "Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.",
+        "A Provencal stew filled with the hearty flavors of carrots, fennel, leeks, chickpeas, and thyme.",
       image: "chicken-bajane-gf.png",
       price: 9.99
     },
     {
       name: "Gluten Free Pizza",
-      category: categories[0]._id, 
+      category: categories[1]._id,
       description:
-        "The best simple recipe for gluten free pizza dough that anyone can, and should, make is here. Even if you never made homemade pizza before, we are bringing back the chewy, crisp-edged pizza you remember!",
-      image: "gluten-free-pizza.png",
-      price: 9.99
-    },
-    {
-      name: "Gluten Free Pizza",
-      category: categories[2]._id,
-      description:
-        "The best simple recipe for gluten free pizza dough that anyone can, and should, make is here. Even if you never made homemade pizza before, we are bringing back the chewy, crisp-edged pizza you remember!",
+        "You won't miss the gluten in this crust! Topped with cheesy goodness and turkey pepperoni, this pizza is bound to be a hit with the whole family.",
       image: "gluten-free-pizza.png",
       price: 9.99
     },
     {
       name: "Pan Fried Catfish",
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
-        "This recipe for gluten-free beer-battered fried fish produces a crisp, light, and golden end result without the gluten. .",
-      image: "pan-fried-catfish-with-cajun-tartar-sauce-gf.png",
-      price: 10.99
-    },
-    {
-      name: "Pan Fried Catfish",
-      category: categories[2]._id,
-      description:
-        "This recipe for gluten-free beer-battered fried fish produces a crisp, light, and golden end result without the gluten. .",
+        "Instead of a traditional crunchy coating, you use a Cajun spice blend to season the fish and pan-fried it in a pan coated with cooking spray, which helps keep calories in check and is less involved than deep-fat frying.",
       image: "pan-fried-catfish-with-cajun-tartar-sauce-gf.png",
       price: 10.99
     },
     {
       name: "Tomato Basil Sausage Pasta",
-      category: categories[0]._id,
+      category: categories[1]._id,
       description:
-        "Go from stovetop to dinner table in just 30 minutes with my satisfyingly simple and delicious Gluten Free Sausage, Tomato, and Mozzarella Pasta. Featuring fresh tomatoes, mozzarella, spicy and sweet Italian sausage, and a few pantry staples this recipe is a home run for weeknight meals.",
+        "Ripe, summer tomatoes are juicy and delicious in this pasta dish, with no seeding or peeling necessary.",
       image: "tomato-basil-sausage-pasta-gf.png",
       price: 9.99
     },
     {
-      name: "Tomato Basil Sausage Pasta",
+      name: "Greek Quinoa Salad",
       category: categories[2]._id,
-      description:
-        "Go from stovetop to dinner table in just 30 minutes with my satisfyingly simple and delicious Gluten Free Sausage, Tomato, and Mozzarella Pasta. Featuring fresh tomatoes, mozzarella, spicy and sweet Italian sausage, and a few pantry staples this recipe is a home run for weeknight meals.",
-      image: "tomato-basil-sausage-pasta-gf.png",
-      price: 9.99
-    },
-    {
-      name: "Greek Quinoa Salad",
-      category: categories[0]._id,
-      description:
-        "This healthy Greek Quinoa Salad is an easy make-ahead vegetarian side dish that is ready to rock your plate!",
-      image: "GreekQuinoaSalad.JPG",
-      price: 9.99
-    },
-    {
-      name: "Greek Quinoa Salad",
-      category: categories[3]._id,
       description:
         "This healthy Greek Quinoa Salad is an easy make-ahead vegetarian side dish that is ready to rock your plate!",
       image: "GreekQuinoaSalad.JPG",
@@ -163,132 +91,92 @@ db.once("open", async () => {
     },
     {
       name: "Rainbow Veggie Wrap",
-      category: categories[0]._id, 
+      category: categories[2]._id,
       description:
-        "This healthy Greek Quinoa Salad is an easy make-ahead vegetarian side dish that is ready to rock your plate!",
-      image: "GreekQuinoaSalad.JPG",
-      price: 9.99
-    },
-    {
-      name: "Rainbow Veggie Wrap",
-      category: categories[3]._id,
-      description:
-        "This healthy Greek Quinoa Salad is an easy make-ahead vegetarian side dish that is ready to rock your plate!",
-      image: "GreekQuinoaSalad.JPG",
-      price: 9.99
-    },
-    {
-      name: "Vegan Pesto Zoodles",
-      category: categories[0]._id,
-      description:
-        "There is definitely a sushi vibe to these kid-friendly wraps, which are stuffed with vegetables, cheese and hummus and then rolled and sliced. Serve them with store-bought green goddess, a creamy herb-filled dressing, to take it up a notch with ease.",
+        "There's definitely a sushi vibe to these wraps, which are stuffed with vegetables, cheese and hummus and then rolled and sliced. They look impressive but they're easy enough to assemble for an easy lunch or dinner.",
       image: "RainbowVeggieWrap.JPG",
       price: 9.99
     },
     {
       name: "Vegan Pesto Zoodles",
-      category: categories[3]._id,
+      category: categories[2]._id,
       description:
-        "There is definitely a sushi vibe to these kid-friendly wraps, which are stuffed with vegetables, cheese and hummus and then rolled and sliced. Serve them with store-bought green goddess, a creamy herb-filled dressing, to take it up a notch with ease.",
-      image: "RainbowVeggieWrap.JPG",
-      price: 9.99
-    },
-    {
-      name: "Ratatouille",
-      category: categories[0]._id,
-      description:
-        "Zucchini noodles with pesto are delicious low-carb keto pesto pasta made of spiralized zucchini and cooked in a creamy almond milk pesto sauce.",
+        "This is a simple summer meal that is bursting with flavor, and ready in under thirty minutes. Bam!",
       image: "VeganPestoZoodles.JPG",
       price: 9.99
     },
     {
       name: "Ratatouille",
+      category: categories[2]._id,
+      description:
+        "This is the best French summer vegetable stew that you can stir up in one pot within 30 minutes.",
+      image: "VeganRatatouille.JPG",
+      price: 9.99
+    },
+    {
+      name: "Ravioli Casserole",
       category: categories[3]._id,
       description:
-        "Zucchini noodles with pesto are delicious low-carb keto pesto pasta made of spiralized zucchini and cooked in a creamy almond milk pesto sauce.",
-      image: "VeganPestoZoodles.JPG",
-      price: 9.99
-    },
-    {
-      name: "Ravioli Casserole",
-      category: categories[0]._id,
-      description:
-        "This is the best French summer vegetable stew that you can stir up in one pot within 30 minutes. I say to stir up because the traditional ratatouille is cooked on a stovetop and NOT BAKED. It is a quick and easy dish to make from colorful summer vegetables like fresh tomato, zucchini, eggplant, and bell pepper. It is naturally vegan and vegetarian.",
-      image: "VeganRatatouille.JPG",
-      price: 9.99
-    },
-    {
-      name: "Ravioli Casserole",
-      category: categories[4]._id,
-      description:
-        "This is the best French summer vegetable stew that you can stir up in one pot within 30 minutes. I say to stir up because the traditional ratatouille is cooked on a stovetop and NOT BAKED. It is a quick and easy dish to make from colorful summer vegetables like fresh tomato, zucchini, eggplant, and bell pepper. It is naturally vegan and vegetarian.",
-      image: "VeganRatatouille.JPG",
-      price: 9.99
-    },
-    {
-      name: "Tangy Sweet and Sour Meatballs",
-      category: categories[0]._id,
-      description:
-        "The whole family will love the fun, cheesy flavor of this ravioli casserole. This like lasagna—without all the fuss! Timesaving ingredients such as prepared spaghetti sauce and frozen ravioli make it a cinch to fix. Children can help you assemble this one.",
+        "The whole family will love the fun, cheesy flavor of this ravioli casserole. It's like lasagna without all the fuss! Children can help you assemble this one.",
       image: "RavioliCasserole.JPG",
       price: 4.99
     },
     {
       name: "Tangy Sweet and Sour Meatballs",
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
-        "The whole family will love the fun, cheesy flavor of this ravioli casserole. This like lasagna—without all the fuss! Timesaving ingredients such as prepared spaghetti sauce and frozen ravioli make it a cinch to fix. Children can help you assemble this one.",
-      image: "RavioliCasserole.JPG",
+        "A fabulous sauce, green peppers, and pineapple chunks transform premade meatballs into something special.",
+      image: "TangySweetAndSourMeatballs.JPG",
       price: 4.99
     },
     {
       name: "Mexican Turkey Roll-Ups",
-      category: categories[0]._id,
+      category: categories[3]._id,
       description:
-        "A fabulous sauce, green pepper and pineapple chunks transform premade meatballs into something special. Serving them over rice makes for a satisfying main dish.",
-      image: "TangySweetandSoutMeatballs.JPG",
-      price: 4.99
-    },
-    {
-      name: "Mexican Turkey Roll-Ups",
-      category: categories[4]._id,
-      description:
-        "A fabulous sauce, green pepper and pineapple chunks transform premade meatballs into something special. Serving them over rice makes for a satisfying main dish.",
-      image: "TangySweetandSoutMeatballs.JPG",
-      price: 4.99
-    },
-    {
-      name: "Chicken Stir-Fry Sheet Pan Meal",
-      category: categories[0]._id,
-      description:
-        "This is the perfect recipe for hungry childern, this is a dish with Mexican flavor and want to use turkey. These roll-ups are fun and so tasty, even kids like them. It is a different use for leftover turkey.",
+        "This is the perfect recipe when you're hungry for a dish with Mexican flavor and want to use turkey. These roll-ups are fun and so tasty, even kids like them.",
       image: "MexicanTurkeyRollUps.JPG",
-      price: 4.99
-    },
-    {
-      name: "Chicken Stir-Fry Sheet Pan Meal",
-      category: categories[4]._id,
-      description:
-        "This is the perfect recipe for hungry childern, this is a dish with Mexican flavor and want to use turkey. These roll-ups are fun and so tasty, even kids like them. It is a different use for leftover turkey.",
-      image: "MexicanTurkeyRollUps.JPG",
-      price: 4.99
-    },
-    {
-      name: "Chicken Stir-Fry Sheet Pan Meal",
-      category: categories[0]._id,
-      description:
-        "When you need an easy chicken dinner the whole family will love, it does not get much better than this Chicken Stir-Fry Sheet Pan Meal. And this recipe is deliciously low in carbs!",
-      image: "ChickenStirFry.JPG",
       price: 4.99
     },
     {
       name: "Chicken Stir-Fry Sheet Pan Meal",
       category: categories[3]._id,
       description:
-        "When you need an easy chicken dinner the whole family will love, it does not get much better than this Chicken Stir-Fry Sheet Pan Meal. And this recipe is deliciously low in carbs!",
+        "When you need an easy chicken dinner the whole family will love, it doesn't get much better than this Chicken Stir-Fry Sheet Pan Meal. And this recipe is deliciously low in carbs!",
       image: "ChickenStirFry.JPG",
       price: 4.99
     },
+    {
+      name: "Chocolate Chip Mug Cake",
+      category: categories[4]._id,
+      description:
+        "This fluffy, warm chocolate chip mug cake bakes in the microwave and has all the decadence you want from a dessert in a single serving! With just a few ingredients, this mug cake whips up in mere minutes and will totally satisfy your chocolatey dessert cravings!",
+      image: "chocolate-chip-mug-cake.png",
+      price: 2.99
+    },
+    {
+      name: "Chocolate Mug Cake",
+      category: categories[4]._id,
+      description:
+        "This easy chocolate mug cake is moist, fluffy, and makes a wonderful dessert for 1 (that means no sharing)! This cake requires no eggs, and it's so simple you just combine the ingredients and pop it in the microwave for a couple of minutes!",
+      image: "chocolate-mug-cake.png",
+      price: 2.99
+    },
+    {
+      name: "Coffee Cake Mug Cake",
+      category: categories[4]._id,
+      description:
+        "This moist and fluffy coffee cake mug cake is an easy single-serving dessert that can be made in your microwave in just 2 minutes! It is a deliciously fluffy cinnamon cake with a cinnamon crumb topping, and it's exactly what you need when those dessert cravings strike!",
+      image: "coffee-cake-mug-cake.png",
+      price: 2.99
+    },
+    {
+      name: "Vanilla Mug Cake",
+      category: categories[4]._id,
+      description:
+        "This is the perfect recipe for hungry childern, this is a dish with Mexican flavor and want to use turkey. These roll-ups are fun and so tasty, even kids like them. It is a different use for leftover turkey.",
+      image: "vanilla-mug-cake.png",
+      price: 2.99
+    }
   ]);
 
   console.log("products seeded");
