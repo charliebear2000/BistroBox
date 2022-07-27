@@ -36,6 +36,7 @@ div.a {
   width: 400px;
   height: 200px;
   border: 3px solid red;
+  margin-bottom: 20px;
 }
 div.b {
   position: absolute;
@@ -151,6 +152,12 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
+  font-family: "Scope One", sans-serif;
+}
+div.buttondiv {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 button[disabled] {
@@ -317,4 +324,17 @@ input:focus {
   .menu-title {
     font-size: 38px;
   }
+}
+button.b1 {
+  background-color: D7E3EF;
+  color: var(--dark);
+  border: none;
+  padding: 0.25rem 1rem;
+  border-radius: 3px;
+  font-size: 1.25rem;
+  font-family: "Scope One", sans-serif;
+
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
 }
