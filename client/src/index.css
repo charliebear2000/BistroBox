@@ -282,19 +282,35 @@ input:focus {
   border-bottom: var(--primary) solid 2.25px;
 }
 
+.menu-btn::selection {
+  opacity: .8;
+  border-bottom: var(--primary) solid 2.25px;
+}
+
 .meal-name{
   font-weight: bold;
 }
 
-.cart-btn, .submit-btn {
+.cart-btn, .submit-btn, .details-btn {
   background-color: var(--tertiary);
   color: var(--light);
 }
 
-.cart-btn:hover, .submit-btn:hover {
+.cart-btn:hover, .submit-btn:hover, .details-btn:hover {
   background-color: var(--secondary);
   /* color: var(--dark); */
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.details-img {
+  height: 50%;
+  width: 50%;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -308,5 +324,13 @@ input:focus {
 
   .menu-title {
     font-size: 38px;
+  }
+
+  .detail-container, .detail-info, .detail-price {
+    flex-direction: column;
+  }
+
+  .detail-price {
+    justify-content: flex-start;
   }
 }
