@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../index.css";
 // import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
 import image from "../assets/bras.jpg";
 const About = () => {
+  const [reveal, setReveal] = useState(false);
   return (
-    <div>
+    <div className="aboutdiv">
       {/* <CategoryMenu /> */}
       <img
         src={image}
@@ -61,7 +62,10 @@ const About = () => {
           </div>
         </div>
       </div>
-
+      <button className="h6" onClick={() => setReveal(!reveal)}>
+        Which dietary restrictions can BistroBox accomodate?
+      </button>
+      {reveal && " Any of them "}
       <Cart />
     </div>
   );

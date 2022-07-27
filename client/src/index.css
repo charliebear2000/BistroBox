@@ -29,6 +29,7 @@ div.intro {
   border: #f3a847 4px solid;
   font-weight: bold;
   max-width: 70%;
+  margin-bottom: 10px;
 }
 div.a {
   position: relative;
@@ -42,16 +43,17 @@ div.b {
   left: auto;
   width: 100%;
   height: 100%;
-  border: 3px solid orange;
+  bottom: 0;
 }
 div.c {
   position: absolute;
-  left: 450px;
+  left: 430px;
   right: auto;
   width: 100%;
   height: 100%;
   bottom: 0px;
   border: 3px solid green;
+  overflow: auto;
 }
 div.d {
   position: absolute;
@@ -136,7 +138,12 @@ header a {
 ul {
   list-style-type: none;
 }
-
+div.aboutdiv {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
 button {
   text-decoration: none;
   padding: 0.25rem 1rem;
