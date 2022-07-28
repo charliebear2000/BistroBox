@@ -67,13 +67,15 @@ const About = () => {
             <a href="/">Get Started!</a>
           </h2>
         </div>
-        <img
-          src={stew}
-          className="my-2"
-          style={{ width: "max-width", height: "30%" }}
-          alt="image showing a bowl of plant based gluten beef stew"
-        />
+
         <div className="a">
+          <div className="featurepic">
+            <img
+              src={stew}
+              style={{ width: "max-width", height: "30%" }}
+              alt="image showing a bowl of plant based gluten beef stew"
+            />
+          </div>
           <div className="b">
             <p>
               "I'm going to be honest with you, before I started using
