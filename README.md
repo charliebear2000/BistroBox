@@ -29,6 +29,8 @@ This application will be run from Heroku at the following URL:
 
 [BistroBox](https://mysterious-wildwood-15275.herokuapp.com/)
 
+When you open BistroBox site click on your meal selection and that will take you to a product description. When you are on that page you can add however many meals you want to your cart. Once you have completed your order you can click on the shopping cart and enter your credit card information to purchase your items. While shopping you can leave a review and see our customers reviews!
+
 
 ---
 
