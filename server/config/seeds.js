@@ -38,7 +38,7 @@ db.once("open", async () => {
       category: categories[0]._id,
       description:
         "These 20 minute ground chicken tacos with poblano peppers come together so fast for an easy and healthy dinner recipe.",
-      image: "GroundChickenTaco.JPG",
+      image: "GroundChickenTaco.jpg",
       price: 9.99
     },
     {
@@ -86,7 +86,7 @@ db.once("open", async () => {
       category: categories[2]._id,
       description:
         "This healthy Greek Quinoa Salad is an easy make-ahead vegetarian side dish that is ready to rock your plate!",
-      image: "GreekQuinoaSalad.JPG",
+      image: "GreekQuinoaSalad.jpg",
       price: 9.99
     },
     {
