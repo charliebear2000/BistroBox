@@ -62,7 +62,7 @@ For more information about this license go to: [MIT License](http://choosealicen
 
 ## Screenshots
 
-![Screenshot 1]()
+![Screenshot 1](./client/public/images/Screenshot1.JPG)
 
 ---
 
