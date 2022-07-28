@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "../index.css";
 // import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
-import image from "../assets/bras.jpg";
+import image from "../assets/front-page.jpg";
 import stew from "../assets/stew.jpg";
 const About = () => {
   const [reveal1, setReveal1] = useState(false);
