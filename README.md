@@ -13,12 +13,13 @@
 
 ## Description
 
+This app is similar to other meal box services in that you pick meals that you will cook at home. It is unique because we sell our meals per serving instead of being locked into 2 or 4 servings. We also offer dessert choices that are single serving mug cakes. Choose as many or as few servings of each meal as you need!
 
 ---
 
 ## Installation
 
-To install this application on your local computer, you will need to clone the repository from GitHub on to your local computer. You will need to run npm i to install all the modules. The application requires the following module packages: Node.js, Bcrypt, Dotenv, Express. JS, Handlebars, Anime.js, MYSQL 2 and Sequelize. After you install the modules, run mysql -u root -p  in your terminal and add the schema. Enter source /db.schemasql to run and select the scheme.sql file. After you have installed the modules and have the mysql running then enter run npm start into your terminal. 
+To install this application on your local computer, you will need to clone the repository from GitHub onto your local computer. You will need to run npm i to install all the modules. The application requires the following module packages: REACT, Express.js, MongoDB, Node.js, Mongoose and Apollo Client. After you install the modules, run npm run seed in your terminal. After you have installed the modules and have the seeds running then enter run npm develop into your terminal. 
 
 ---
 
@@ -37,8 +38,11 @@ This application will be run from Heroku at the following URL:
 
 - [REACT](https://reactjs.org/)
 - [Express.js](https://expressjs.com/en/starter/installing.html)
-- [Mongodb](https://www.mongodb.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [Node.js](https://nodejs.org/en/)
 - [Apollo](https://www.apollographql.com/docs/react/)
+- [Heroku](https://mysterious-wildwood-15275.herokuapp.com/)
 
 #### Sites
 
