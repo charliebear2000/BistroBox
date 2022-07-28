@@ -76,7 +76,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
-  background-color: #fffff0;
+  /* background-color: #fffff0; */
   color: var(--dark);
 }
 
@@ -143,11 +143,8 @@ header a {
 ul {
   list-style-type: none;
 }
-div.aboutdiv {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
+.aboutdiv {
+  margin: 50px;
 }
 button {
   text-decoration: none;
@@ -181,7 +178,8 @@ form {
   width: 40%;
 }
 
-input {
+input, textarea {
+  font-family: 'Yantramanav, sans-serif';
   font-size: 1rem;
   padding: 0.25rem;
   border: 1px solid var(--dark);
@@ -302,7 +300,7 @@ div.featurepic {
   border-bottom: var(--primary) solid 2.25px;
 }
 
-.menu-btn::selection {
+.menu-btn:focus {
   opacity: .8;
   border-bottom: var(--primary) solid 2.25px;
 }

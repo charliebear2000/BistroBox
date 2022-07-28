@@ -16,7 +16,7 @@ const About = () => {
         src={image}
         className="my-2"
         style={{ width: "max-width", height: "30%" }}
-        alt="image showing a family eating together"
+        alt="A family eating together"
       />
       <div>
         <div className="intro">
@@ -72,7 +72,7 @@ const About = () => {
             <img
               src={stew}
               style={{ width: "max-width", height: "30%" }}
-              alt="image showing a bowl of plant based gluten beef stew"
+              alt="A bowl of plant based gluten beef stew"
             />
           </div>
           <div className="b">
