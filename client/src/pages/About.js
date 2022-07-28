@@ -19,9 +19,8 @@ const About = () => {
         alt="image showing a family eating together"
       />
       <div>
-        <h1>Welcome to Bistro Box!</h1>
-
         <div className="intro">
+          <h1>Welcome to Bistro Box!</h1>
           <h5>
             It brings us great pleasure to present to you the easiest meal kit
             ordering platform on the market. We know that life can be very busy,
