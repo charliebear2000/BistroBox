@@ -33,40 +33,41 @@ div.intro {
   background-color: #d7e3ef;
 }
 div.a {
-  position: relative;
-  width: 400px;
-  height: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 99.1vw;
+  min-height: 125vh;
 
-  margin-bottom: 20px;
+  padding: 10px;
 }
 div.b {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: fit-content;
+  padding: 25px;
+  margin-bottom: 35px;
   background-color: #d7e3ef;
-  left: 415px;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  padding: 1%;
 }
 div.c {
-  position: relative;
-  left: 430px;
-  right: auto;
-  width: 100%;
-  top: -8px;
-  height: 100%;
-  bottom: 20px;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+  padding: 25px;
+  margin-bottom: 35px;
   background-color: #d7e3ef;
 }
 div.d {
-  position: absolute;
-  left: auto;
-  right: -850px;
-  width: 100%;
-  height: 100%;
-  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: fit-content;
+  padding: 25px;
+  margin-bottom: 35px;
   background-color: #d7e3ef;
-  padding: 1%;
 }
 
 body {
@@ -178,8 +179,9 @@ form {
   width: 40%;
 }
 
-input, textarea {
-  font-family: 'Yantramanav, sans-serif';
+input,
+textarea {
+  font-family: "Yantramanav, sans-serif";
   font-size: 1rem;
   padding: 0.25rem;
   border: 1px solid var(--dark);
@@ -187,12 +189,16 @@ input, textarea {
   border-radius: 3px;
   transition: box-shadow 0.2s;
 }
-
+div.footer_text {
+  text-align: center;
+}
 input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
-
+div.homepagelink {
+  text-align: center;
+}
 .container {
   width: 85%;
   max-width: 1200px;
@@ -300,21 +306,25 @@ div.featurepic {
   border-bottom: var(--primary) solid 2.25px;
 }
 
-.menu-btn:focus {
-  opacity: .8;
+.menu-btn::selection {
+  opacity: 0.8;
   border-bottom: var(--primary) solid 2.25px;
 }
 
-.meal-name{
+.meal-name {
   font-weight: bold;
 }
 
-.cart-btn, .submit-btn, .details-btn {
+.cart-btn,
+.submit-btn,
+.details-btn {
   background-color: var(--tertiary);
   color: var(--light);
 }
 
-.cart-btn:hover, .submit-btn:hover, .details-btn:hover {
+.cart-btn:hover,
+.submit-btn:hover,
+.details-btn:hover {
   background-color: var(--secondary);
   /* color: var(--dark); */
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
@@ -344,7 +354,9 @@ div.featurepic {
     font-size: 38px;
   }
 
-  .detail-container, .detail-info, .detail-price {
+  .detail-container,
+  .detail-info,
+  .detail-price {
     flex-direction: column;
   }
 
