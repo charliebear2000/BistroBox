@@ -26,32 +26,37 @@ body {
 div.intro {
   font-family: "Scope One", sans-serif;
   font-size: 1.75rem;
-  border: #f3a847 4px solid;
+
   font-weight: bold;
-  max-width: 60%;
+  max-width: 70%;
+  margin-bottom: 10px;
+  background-color: #d7e3ef;
 }
 div.a {
   position: relative;
   width: 400px;
   height: 200px;
-  border: 3px solid red;
+
+  margin-bottom: 20px;
 }
 div.b {
   position: absolute;
-
-  left: auto;
+  background-color: #d7e3ef;
+  left: 415px;
   width: 100%;
   height: 100%;
-  border: 3px solid orange;
+  bottom: 0;
+  padding: 1%;
 }
 div.c {
-  position: absolute;
-  left: 450px;
+  position: relative;
+  left: 430px;
   right: auto;
   width: 100%;
+  top: -8px;
   height: 100%;
-  bottom: 0px;
-  border: 3px solid green;
+  bottom: 20px;
+  background-color: #d7e3ef;
 }
 div.d {
   position: absolute;
@@ -60,7 +65,8 @@ div.d {
   width: 100%;
   height: 100%;
   bottom: 0px;
-  border: 3px solid blue;
+  background-color: #d7e3ef;
+  padding: 1%;
 }
 
 body {
@@ -70,6 +76,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
+  /* background-color: #fffff0; */
   color: var(--dark);
 }
 
@@ -104,10 +111,6 @@ h4 {
   font-size: 1.5rem;
 }
 
-/* h5 {
-
-} */
-
 h6 {
   font-family: "Scope One", sans-serif;
   font-size: 1rem;
@@ -140,7 +143,9 @@ header a {
 ul {
   list-style-type: none;
 }
-
+.aboutdiv {
+  margin: 50px;
+}
 button {
   text-decoration: none;
   padding: 0.25rem 1rem;
@@ -148,6 +153,12 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
+  font-family: "Scope One", sans-serif;
+}
+div.buttondiv {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 button[disabled] {
@@ -167,7 +178,8 @@ form {
   width: 40%;
 }
 
-input {
+input, textarea {
+  font-family: 'Yantramanav, sans-serif';
   font-size: 1rem;
   padding: 0.25rem;
   border: 1px solid var(--dark);
@@ -215,7 +227,10 @@ input:focus {
   margin-top: var(--spacing-one);
   margin-bottom: var(--spacing-one);
 }
-
+div.featurepic {
+  margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two);
+}
 .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
@@ -285,21 +300,35 @@ input:focus {
   border-bottom: var(--primary) solid 2.25px;
 }
 
-.meal-name {
+.menu-btn:focus {
+  opacity: .8;
+  border-bottom: var(--primary) solid 2.25px;
+}
+
+.meal-name{
   font-weight: bold;
 }
 
-.cart-btn,
-.submit-btn {
+.cart-btn, .submit-btn, .details-btn {
   background-color: var(--tertiary);
   color: var(--light);
 }
 
-.cart-btn:hover,
-.submit-btn:hover {
+.cart-btn:hover, .submit-btn:hover, .details-btn:hover {
   background-color: var(--secondary);
   /* color: var(--dark); */
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.details-img {
+  height: 50%;
+  width: 50%;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -314,4 +343,25 @@ input:focus {
   .menu-title {
     font-size: 38px;
   }
+
+  .detail-container, .detail-info, .detail-price {
+    flex-direction: column;
+  }
+
+  .detail-price {
+    justify-content: flex-start;
+  }
+}
+button.b1 {
+  background-color: D7E3EF;
+  color: var(--dark);
+  border: none;
+  padding: 0.25rem 1rem;
+  border-radius: 3px;
+  font-size: 1.25rem;
+  font-family: "Scope One", sans-serif;
+
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
 }
