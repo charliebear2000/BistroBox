@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Cart from "../components/Cart";
 import image from "../assets/front-page.jpg";
 import stew from "../assets/stew.jpg";
+import review from "../assets/review.png";
 const About = () => {
   const [reveal1, setReveal1] = useState(false);
   const [reveal2, setReveal2] = useState(false);
@@ -19,7 +20,7 @@ const About = () => {
       />
       <div>
         <div className="intro">
-          <h1>Welcome to Bistro Box!</h1>
+          <h1>Welcome to BistroBox!</h1>
           <h5>
             It brings us great pleasure to present to you the easiest meal kit
             ordering platform on the market. We know that life can be very busy,
@@ -33,30 +34,38 @@ const About = () => {
         </div>
         <div className="buttondiv">
           <button className="b1" onClick={() => setReveal1(!reveal1)}>
+            <img src={review} alt="review" />
             Which dietary restrictions can BistroBox accomodate?
           </button>
+          <br></br>
           {reveal1 &&
             " From vegan, to celiac, to dairy free and beyond.  Contact one of our representatives to get on the right meal plan for you! "}
           <br></br>
           <br></br>
           <button className="b1" onClick={() => setReveal2(!reveal2)}>
+            <img src={review} alt="review" />
             What sets BistroBox apart from other meal kits?
           </button>
+          <br></br>
           {reveal2 &&
             " Our willingness to adapt to our guests needs, along with our chef's training are just two examples of what makes BistroBox special! "}
           <br></br>
           <br></br>
           <button className="b1" onClick={() => setReveal3(!reveal3)}>
-            I follow a strict halal diet, will BistroBox be able to provide
-            meals?
+            <img src={review} alt="review" />I follow a strict halal diet, will
+            BistroBox be able to provide meals?
           </button>
+          <br></br>
           {reveal3 &&
             " Of course! We can gladly accommodate any religious dietary restrictions! "}
           <br></br>
           <br></br>
+
           <button className="b1" onClick={() => setReveal4(!reveal4)}>
+            <img src={review} alt="review" />
             How do I get started with BistroBox?
           </button>
+          <br></br>
           {reveal4 &&
             " Just click the Get Started button below and you'll be taken to all of the meals that we offer.  From there, just signup and you can start purchasing our great meals! "}
         </div>
@@ -104,6 +113,11 @@ const About = () => {
               </p>
             </div>
           </div>
+          <footer className="footer">
+            <div className="footer__text">
+              <p>&copy; 2022 BistroBox. All rights reserved.</p>
+            </div>
+          </footer>
         </div>
       </div>
 
