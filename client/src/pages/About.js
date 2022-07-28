@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "../index.css";
 // import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
 import image from "../assets/bras.jpg";
@@ -63,7 +62,7 @@ const About = () => {
         </div>
         <div className="homepagelink">
           <h2>
-            <a href="/">Get Started!</a>
+            <a href="/home">Get Started!</a>
           </h2>
         </div>
 
