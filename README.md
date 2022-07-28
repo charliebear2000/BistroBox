@@ -74,18 +74,17 @@ For more information about this license go to: [MIT License](http://choosealicen
 
 ## Creators
 
-- Courtney Koehler
-    - GitHub: [ckoehler16](https://github.com/ckoehler16)
-    - :mailbox_with_mail: email: ckoehler16@gmail.com
-- Chris Porter
-    - GitHub: [ChrisPorter87](https://github.com/ChrisPorter87)
-    - :mailbox_with_mail: email: cap8095@gmail.com
 - Amy Rawls
     - GitHub: [charliebear2000](https://github.com/charliebear2000)
     - :mailbox_with_mail: email: amyrawls@yahoo.com
 - Ashley Walker
     - GitHub: [lawalker4](https://github.com/lawalker4)
     - :mailbox_with_mail: email: lauraashleywalker4@gmail.com 
-
+- Chris Porter
+    - GitHub: [ChrisPorter87](https://github.com/ChrisPorter87)
+    - :mailbox_with_mail: email: cap8095@gmail.com 
+- Courtney Koehler
+    - GitHub: [ckoehler16](https://github.com/ckoehler16)
+    - :mailbox_with_mail: email: ckoehler16@gmail.com
 
   Please contact us with any questions you might have.
