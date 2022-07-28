@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Cart from "../components/Cart";
 import image from "../assets/bras.jpg";
 import stew from "../assets/stew.jpg";
+import review from "../assets/review.png";
 const About = () => {
   const [reveal1, setReveal1] = useState(false);
   const [reveal2, setReveal2] = useState(false);
@@ -33,6 +34,7 @@ const About = () => {
         </div>
         <div className="buttondiv">
           <button className="b1" onClick={() => setReveal1(!reveal1)}>
+            <img src={review} alt="review" />
             Which dietary restrictions can BistroBox accomodate?
           </button>
           <br></br>
@@ -41,6 +43,7 @@ const About = () => {
           <br></br>
           <br></br>
           <button className="b1" onClick={() => setReveal2(!reveal2)}>
+            <img src={review} alt="review" />
             What sets BistroBox apart from other meal kits?
           </button>
           <br></br>
@@ -49,15 +52,17 @@ const About = () => {
           <br></br>
           <br></br>
           <button className="b1" onClick={() => setReveal3(!reveal3)}>
-            I follow a strict halal diet, will BistroBox be able to provide
-            meals?
+            <img src={review} alt="review" />I follow a strict halal diet, will
+            BistroBox be able to provide meals?
           </button>
           <br></br>
           {reveal3 &&
             " Of course! We can gladly accommodate any religious dietary restrictions! "}
           <br></br>
           <br></br>
+
           <button className="b1" onClick={() => setReveal4(!reveal4)}>
+            <img src={review} alt="review" />
             How do I get started with BistroBox?
           </button>
           <br></br>
