@@ -306,7 +306,7 @@ div.featurepic {
   border-bottom: var(--primary) solid 2.25px;
 }
 
-.menu-btn::selection {
+.menu-btn:focus {
   opacity: 0.8;
   border-bottom: var(--primary) solid 2.25px;
 }
