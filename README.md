@@ -19,7 +19,7 @@ This app is similar to other meal box services in that you pick meals that you w
 
 ## Installation
 
-To install this application on your local computer, you will need to clone the repository from GitHub onto your local computer. You will need to run npm i to install all the modules. The application requires the following module packages: REACT, Express.js, MongoDB, Node.js, Mongoose and Apollo Client. After you install the modules, run npm run seed in your terminal. After you have installed the modules and have the seeds running then enter run npm develop into your terminal. 
+To install this application on your local computer, you will need to clone the repository from GitHub onto your local computer. You will need to `run npm i` to install all the modules. The application requires the following module packages: REACT, Express.js, MongoDB, Node.js, Mongoose and Apollo Client. After you install the modules, run npm run seed in your terminal. After you have installed the modules and have the seeds running then enter run `npm run develop` into your terminal. 
 
 ---
 
@@ -27,7 +27,7 @@ To install this application on your local computer, you will need to clone the r
 
 This application will be run from Heroku at the following URL:
 
-[BistroBox](https://mysterious-wildwood-15275.herokuapp.com/)
+[BistroBox](https://bistro-box.herokuapp.com/)
 
 When you open BistroBox site click on your meal selection and that will take you to a product description. When you are on that page you can add however many meals you want to your cart. Once you have completed your order you can click on the shopping cart and enter your credit card information to purchase your items. While shopping you can leave a review and see our customers reviews!
 
@@ -48,7 +48,7 @@ When you open BistroBox site click on your meal selection and that will take you
 
 #### Sites
 
-- [Heroku](https://mysterious-wildwood-15275.herokuapp.com/)
+- [Heroku](https://bistro-box.herokuapp.com/)
 
 - [REPO](https://github.com/charliebear2000/BistroBox)
 
@@ -68,7 +68,7 @@ For more information about this license go to: [MIT License](http://choosealicen
 
 ---
 
-![Screenshot 2]()
+![Screenshot 2](./client/public/images/Screenshot2.JPG)
 
 ---
 
