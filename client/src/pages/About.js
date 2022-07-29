@@ -15,7 +15,13 @@ const About = () => {
         <div className="intro">
           <h3>Welcome to BistroBox!</h3>
           <p>
-            It brings us great pleasure to present to you the easiest meal kit ordering platform on the market. We know that life can be very busy, between work, school activities, kids sports, and whatever curveball that life throws at you, having time to cook and prep a meal for the family can often times not be feasible. Bistro Box is here to lend you a helping hand, while bringing you meals that will accomodate your specific dietary restrictions!
+            It brings us great pleasure to present to you the easiest meal kit
+            ordering platform on the market. We know that life can be very busy,
+            between work, school activities, kids sports, and whatever curveball
+            that life throws at you, having time to cook and prep a meal for the
+            family can often times not be feasible. Bistro Box is here to lend
+            you a helping hand, while bringing you meals that will accomodate
+            your specific dietary restrictions!
           </p>
         </div>
         <div className="image-div">
@@ -43,7 +49,7 @@ const About = () => {
         </button>
         <br></br>
         {reveal2 &&
-          " Our willingness to adapt to our guests needs, along with our chef's training are just two examples of what makes BistroBox special! "}
+          " Our willingness to adapt to our guest's needs, along with our chef's training are just two examples of what makes BistroBox special! "}
         <br></br>
         <br></br>
         <button className="b1" onClick={() => setReveal3(!reveal3)}>
@@ -80,17 +86,27 @@ const About = () => {
         </div>
         <div className="b">
           <p>
-            "I'm going to be honest with you, before I started using BistroBox, my family was eating a lot of frozen junk and fast food. Now that we've switched to using BistroBox several times a week, I can finally feel proud of the food that I'm feeding our family."
+            "I'm going to be honest with you, before I started using BistroBox,
+            my family was eating a lot of frozen junk and fast food. Now that
+            we've switched to using BistroBox several times a week, I can
+            finally feel proud of the food that I'm feeding our family."
             <br></br>- Stephanie
           </p>
           <div className="c">
             <p>
-              "I'm generally an anxious person, so the added stress of needing to feed our family puts a lot of emotional burden on me, which I really needed to alleviate. Ever since I've begun ordering BistroBox, it's as if a weight has been lifted off of my shoulders." <br></br>- Jean-Louis
+              "I'm generally an anxious person, so the added stress of needing
+              to feed our family puts a lot of emotional burden on me, which I
+              really needed to alleviate. Ever since I've begun ordering
+              BistroBox, it's as if a weight has been lifted off of my
+              shoulders." <br></br>- Jean-Louis
             </p>
           </div>
           <div className="d">
             <p>
-              "I just want to thank the makers of BistroBox for making meal kits that cater to people with different dietary needs. My daughter has Celiac disease so the fact that we can find delicious meals that meet her condition is really a game changer." <br></br>- Kendra
+              "I just want to thank the makers of BistroBox for making meal kits
+              that cater to people with different dietary needs. My daughter has
+              Celiac disease, so the fact that we can find delicious meals that
+              meet her condition is really a game changer." <br></br>- Kendra
             </p>
           </div>
         </div>
@@ -100,7 +116,6 @@ const About = () => {
           </div>
         </footer>
       </div>
-
 
       <Cart />
     </div>
