@@ -15,6 +15,10 @@ function CategoryMenu() {
 
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 
+  function refreshPage() {
+    window.location.reload(true);
+  }
+
   useEffect(() => {
     if (categoryData) {
       dispatch({
@@ -45,6 +49,7 @@ function CategoryMenu() {
     <div className="menu-list">
       <h2 className="menu-title">Explore Our Menus</h2>
       <div className="menu-types">
+        <button className="menu-btn" onClick={refreshPage}>All Menus</button>
         {categories.map((item) => (
           <button
             className="menu-btn"
