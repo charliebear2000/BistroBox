@@ -50,7 +50,7 @@ db.once("open", async () => {
       price: 10.99
     },
     {
-      name: "Beef Stew",
+      name: "Beefless Stew",
       category: categories[1]._id,
       description:
         "This gluten-free beef stew is also beefless! This stew is an easy healthy plant-base version of a classic comfor meal we all grew up with.",
