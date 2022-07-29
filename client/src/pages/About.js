@@ -58,7 +58,7 @@ const About = () => {
         </button>
         <br></br>
         {reveal3 &&
-          " Of course! We can gladly accommodate any religious dietary restrictions! "}
+          " Of course! We can gladly provide meals to meet any religious dietary restrictions! "}
         <br></br>
         <br></br>
 
