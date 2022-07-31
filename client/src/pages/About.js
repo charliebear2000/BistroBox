@@ -25,13 +25,12 @@ const About = () => {
         <div className="intro">
           <h3 className="intro-title">Welcome to BistroBox!</h3>
           <p className="intro-text">
-            It brings us great pleasure to present to you the easiest meal kit
-            ordering platform on the market. We know that life can be very busy,
-            between work, school activities, kids sports, and whatever curveball
-            that life throws at you, having time to cook and prep a meal for the
-            family can often times not be feasible. Bistro Box is here to lend
-            you a helping hand, while bringing you meals that will accomodate
-            your specific dietary restrictions!
+            This is the easiest meal kit ordering platform on the market. 
+            We have a wide variety of meals to choose from and can accommodate 
+            many different dietary needs. If you don't see meals that work for 
+            you, please contact us so we can help you create a meal plan. 
+            Our pricing is per person, so order as many or as few meals 
+            as you need. Don't forget to check out our single serving desserts as well!
           </p>
         </div>
         <div className="image-div">
@@ -55,21 +54,21 @@ const About = () => {
           <li className="faq-item">
             <button className="faq-btn" onClick={() => setReveal1(!reveal1)}>
               <img src={review} alt="review" />
-              <p>Which dietary restrictions can BistroBox accomodate?</p>
+              <p>Which dietary restrictions can BistroBox accommodate?</p>
             </button>
             <p className="answer-reveal">
               {reveal1 &&
-                " From vegan, to celiac, to dairy free and beyond.  Contact one of our representatives to get on the right meal plan for you! "}
+                " From vegan, to celiac, to dairy-free and beyond. Contact one of our representatives to create the right meal plan for you! "}
             </p>
           </li>
           <li className="faq-item">
             <button className="faq-btn" onClick={() => setReveal2(!reveal2)}>
               <img src={review} alt="review" />
-              <p>What sets BistroBox apart from other meal kits?</p>
+              <p>What sets BistroBox apart from other meal kit services?</p>
             </button>
             <p className="answer-reveal">
               {reveal2 &&
-                " Our willingness to adapt to our guest's needs, along with our chef's training are just two examples of what makes BistroBox special! "}
+                " Our willingness to accommodate our guest's needs, along with our chef's training are just two examples of what makes BistroBox special! "}
             </p>
           </li>
           <li className="faq-item">
@@ -79,7 +78,7 @@ const About = () => {
             </button>
             <p className="answer-reveal">
               {reveal3 &&
-                " Of course! We can gladly provide meals to meet any religious dietary restrictions! "}
+                " Of course! We will gladly provide meals that meet any religious dietary restrictions! "}
             </p>
           </li>
           <li className="faq-item">
@@ -89,7 +88,7 @@ const About = () => {
             </button>
             <p className="answer-reveal">
               {reveal4 &&
-                " Just click the Get Started button above and you'll be taken to all of the meals that we offer.  From there, just signup and you can start purchasing our great meals! "}
+                " Just click the Get Started Here button above and you'll be taken to all of the meals that we offer.  From there, just sign up and you can start purchasing our great meals! "}
             </p>
           </li>
         </ul>
@@ -111,14 +110,14 @@ const About = () => {
                 "I'm going to be honest with you, before I started using BistroBox,
                 my family was eating a lot of frozen junk and fast food. Now that
                 we've switched to using BistroBox several times a week, I can
-                finally feel proud of the food that I'm feeding our family."
+                finally feel proud of the food that I'm feeding my family."
                 <br></br>- Stephanie
               </p>
             </div>
             <div className="review2">
               <p className="review-text">
                 "I'm generally an anxious person, so the added stress of needing
-                to feed our family puts a lot of emotional burden on me, which I
+                to feed my family puts a lot of emotional burden on me, which I
                 really needed to alleviate. Ever since I've begun ordering
                 BistroBox, it's as if a weight has been lifted off of my
                 shoulders." <br></br>- Jean-Louis
@@ -129,14 +128,14 @@ const About = () => {
                 "I just want to thank the makers of BistroBox for making meal kits
                 that cater to people with different dietary needs. My daughter has
                 Celiac disease, so the fact that we can find delicious meals that
-                meet her condition is really a game changer." <br></br>- Kendra
+                she can eat is really a game changer." <br></br>- Kendra
               </p>
             </div>
           </div>
         </div>
       </div>
       <footer className="footer">
-        <div className="footer__text">
+        <div className="footer-text">
           <p>&copy; 2022 BistroBox. All rights reserved.</p>
         </div>
       </footer>
