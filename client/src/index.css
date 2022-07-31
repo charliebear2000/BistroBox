@@ -2,7 +2,6 @@
 :root {
   --primary: #062f66;
   --secondary: #ffa4a4;
-  /* --tertiary: #723d46; */
   --tertiary: #8d4a55;
   --light: #d7e3ef;
   --medium: #6985c0;
@@ -234,12 +233,17 @@ nav-tabs {
 }
 
 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   margin-right: 5px;
   text-align: center;
   font-family: "Scope One", sans-serif;
   font-weight: bold;
   background-color: #d7e3ef;
+  border-radius: 5px;
 }
 
 .intro-title {
@@ -253,6 +257,8 @@ nav-tabs {
   background-color: white;
   margin: 10px;
   padding: 10px;
+  border-radius: 5px;
+  text-align: justify;
 }
 
 .image-div {
@@ -263,6 +269,7 @@ nav-tabs {
 .about-image {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
 /* 'Get Started' Link on Homepage Styling */
@@ -272,22 +279,14 @@ nav-tabs {
   text-align: center;
   padding: 30px 40px 60px 40px;
   border-bottom: var(--light) solid 2px;
-  /* padding: 40px; */
 }
 
 .get-started {
   font-size: 30px;
   color: var(--primary);
-  /* text-shadow: 2px 2px 5px white, -2px -2px 5px white; */
   text-shadow: 2px 2px 3px white, 0 0 25px var(--dark), 0 0 5px var(--medium);
   padding: 15px 40px;
-  /* background-color: #f5a38f; */
-  /* border: var(--medium) solid 3px; */
-  /* border-style: ridge; */
-  /* background-image: linear-gradient(var(--secondary), white, var(--secondary)); */
   box-shadow: 20px 20px 5px var(--light);
-  /* background-image: linear-gradient(#f7bac3, white, #f7bac3); */
-  /* background-image: linear-gradient(#ffa4a4, white, #ffa4a4); */
   background-image: radial-gradient(circle at center, white, #f3c8c8);
   border-radius: 10px;
 }
@@ -312,12 +311,11 @@ nav-tabs {
 .faq-list {
   list-style-type: none;
   padding: 0;
-  /* margin: 0; */
 }
 
 .faq-btn {
   display: flex;
-  background-color: D7E3EF;
+  background-color: #D7E3EF;
   color: var(--dark);
   border: none;
   padding: 0.25rem 1rem;
@@ -334,8 +332,7 @@ nav-tabs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 99.1vw; */
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .section-title {
@@ -349,8 +346,9 @@ nav-tabs {
 }
 
 .feature {
-  /* margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 50%;
   margin-right: 10px;
 }
@@ -358,8 +356,8 @@ nav-tabs {
 .feature-image {
   width: 536.25px;
   height: 530.25px;
-  padding-left: 25px;
-  margin-left: 100px;
+  border: var(--primary) solid 1px;
+  border-radius: 5px;
 }
 
 .reviews {
@@ -368,47 +366,34 @@ nav-tabs {
   justify-content: space-evenly;
   width: 50%;
   margin-left: 10px;
+  padding: 10px;
 }
 
-.review1 {
+.review1, .review3 {
   display: flex;
-  width: 75%;
+  width: 85%;
+  margin: 10px;
+  border-radius: 5px;
   color: var(--light);
   background-color: var(--primary);
   box-shadow: -60px 0px 60px -30px var(--primary), 60px 0px 60px -30px var(--primary);
-  /* box-shadow: 40px 40px 5px var(--light); */
-  /* justify-content: center;
-  align-items: center;
-  flex-flow: row wrap; */
-  /* margin-right: 50px; */
-  /* background-color: #d7e3ef; */
+  text-align: justify;
 }
 
 .review2 {
   display: flex;
   flex-flow: row-reverse wrap;
-  /* justify-content: center; */
   align-self: flex-end;
-  width: 75%;
+  margin: 10px;
+  width: 85%;
+  border-radius: 5px;
   color: var(--primary);
-  background-color: #d7e3ef;
+  background-color: #edf3f9;
   box-shadow: -60px 0px 60px -30px var(--primary), 60px 0px 60px -30px var(--primary);
+  text-align: justify;
 }
 
-.review3 {
-  display: flex;
-  width: 75%;
-  color: var(--light);
-  background-color: var(--primary);
-  box-shadow: -60px 0px 60px -30px var(--primary), 60px 0px 60px -30px var(--primary);
-  /* box-shadow: 40px 40px 5px var(--light); */
-  /* justify-content: center;
-  align-items: center;
-  flex-flow: row wrap; */
-  /* padding: 25px;
-  margin-bottom: 35px; */
-  /* background-color: #d7e3ef; */
-}
+
 
 .review-text {
   margin: 10px;
@@ -476,7 +461,6 @@ nav-tabs {
 .submit-btn:hover,
 .details-btn:hover {
   background-color: var(--secondary);
-  /* color: var(--dark); */
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
   
 }
@@ -509,11 +493,6 @@ nav-tabs {
   border: #f3a847 3px solid;
 }
 
-/* Contact Form Styling */
-/* .contact {
-  width: 50%;
-  margin-left:
-} */
 
 /* Styling for Small Screens/Mobile Devices */
 @media screen and (max-width: 768px) {
