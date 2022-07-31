@@ -35,8 +35,8 @@ function ContactForm() {
   };
 
   return (
-    <div className="container my-1">
-      <Link to="/about">← Go back to About</Link>
+    <div className="container contact my-1">
+      <Link to="/">←Back to Home</Link>
       <h2 data-testid="h1tag">Contact Us!</h2>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div className="flex-row space-between my-2">

@@ -1,3 +1,4 @@
+/* Basic Page Styling */
 :root {
   --primary: #062f66;
   --secondary: #ef8696;
@@ -10,11 +11,7 @@
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
 }
-.review {
-  border: #f3a847 solid 2px;
-  border-radius: 5px;
-  max-width: 60%;
-}
+
 * {
   box-sizing: border-box;
 }
@@ -24,44 +21,6 @@ body {
   min-height: 100%;
 }
 
-div.a {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  width: 99.1vw;
-  min-height: 125vh;
-
-  padding: 10px;
-}
-div.b {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: fit-content;
-  padding: 25px;
-  margin-bottom: 35px;
-  background-color: #d7e3ef;
-}
-div.c {
-  display: flex;
-  flex-flow: row-reverse wrap;
-  justify-content: center;
-  padding: 25px;
-  margin-bottom: 35px;
-  background-color: #d7e3ef;
-}
-div.d {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: fit-content;
-  padding: 25px;
-  margin-bottom: 35px;
-  background-color: #d7e3ef;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -69,7 +28,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
-  /* background-color: #fffff0; */
   color: var(--dark);
 }
 
@@ -111,7 +69,6 @@ h6 {
 
 p {
   font-size: 1.1rem;
-  /* margin-top: 0; */
 }
 
 a {
@@ -123,6 +80,7 @@ a {
 a:hover {
   text-decoration: underline;
   color: var(--tertiary);
+  text-shadow: 2px 2px 3px white, 0 0 25px var(--dark), 0 0 5px var(--medium);
 }
 
 header {
@@ -135,23 +93,6 @@ header a {
 
 ul {
   list-style-type: none;
-}
-.aboutdiv {
-  margin: 25px;
-}
-button {
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  font-family: "Scope One", sans-serif;
-}
-div.buttondiv {
-  margin-bottom: 20px;
-  font-size: 1.3rem;
-  font-weight: bold;
 }
 
 button[disabled] {
@@ -169,7 +110,7 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
+  width: 25%;
 }
 
 input,
@@ -182,21 +123,21 @@ textarea {
   border-radius: 3px;
   transition: box-shadow 0.2s;
 }
-div.footer_text {
-  text-align: center;
-}
+
 input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
-div.homepagelink {
-  text-align: center;
-}
-.container {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+
+button,
+nav-tabs {
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1px;
+  font-family: "Scope One", sans-serif;
 }
 
 .flex-row {
@@ -210,6 +151,13 @@ div.homepagelink {
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mx-1 {
@@ -226,10 +174,7 @@ div.homepagelink {
   margin-top: var(--spacing-one);
   margin-bottom: var(--spacing-one);
 }
-div.featurepic {
-  margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two);
-}
+
 .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
@@ -255,19 +200,211 @@ div.featurepic {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
-  width: 25%;
+/* Main Header Styling */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Homepage Navigation Styling */
+.nav-tabs {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.more-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  border-bottom: var(--dark) solid 2px;
+}
+
+/* Welcome Display on Homepage Styling */
+.aboutdiv {
+  margin: 25px;
+}
+
+.welcome {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.intro {
+  width: 50%;
+  margin-right: 5px;
+  text-align: center;
+  font-family: "Scope One", sans-serif;
+  font-weight: bold;
+  background-color: #d7e3ef;
+}
+
+.intro-title {
+  font-size: 40px;
+  border-bottom: var(--primary) solid 2px 75%;
+  text-decoration: underline;
+}
+
+.intro-text {
+  border: var(--dark) solid 1px;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+.image-div {
+  width: 50%;
+  margin-left: 5px;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 'Get Started' Link on Homepage Styling */
+.homepagelink {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 60px 40px;
+  /* padding: 40px; */
+}
+
+.get-started {
+  font-size: 60px;
+  /* text-shadow: 2px 2px 5px white, -2px -2px 5px white; */
+  text-shadow: 2px 2px 3px white, 0 0 25px var(--dark), 0 0 5px var(--medium);
+  padding: 120px;
+  /* background-color: #f5a38f; */
+  /* border: var(--medium) solid 3px; */
+  /* border-style: ridge; */
+  /* background-image: linear-gradient(var(--secondary), white, var(--secondary)); */
+  box-shadow: 40px 40px 5px var(--light);
+  background-image: linear-gradient(#c2848d, white, #c2848d);
+}
+
+/* Frequently Asked Questions (FAQ) Styling */
+.faq-section {
+  margin: 20px 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+  /* margin: 0; */
+}
+
+.faq-btn {
+  display: flex;
+  background-color: D7E3EF;
+  color: var(--dark);
+  border: none;
+  padding: 0.25rem 1rem;
+  border-radius: 3px;
+  font-size: 1.25rem;
+  font-family: "Scope One", sans-serif;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+/* Reviews on Homepage Styling */
+.review-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 99.1vw; */
+  min-height: 125vh;
+  padding: 10px;
+}
+
+.section-title {
+  margin: 40px 0px;
+}
+.review-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.feature {
+  /* margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two); */
+  width: 50%;
+  margin-right: 10px;
+}
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.review1 {
+  display: flex;
+  width: 75%;
+  color: var(--light);
+  background-color: var(--primary);
+  box-shadow: -60px 0px 60px -30px var(--primary), 60px 0px 60px -30px var(--primary);
+  /* box-shadow: 40px 40px 5px var(--light); */
+  /* justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; */
+  /* margin-right: 50px; */
+  /* background-color: #d7e3ef; */
+}
+
+.review2 {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  /* justify-content: center; */
+  align-self: flex-end;
+  width: 75%;
+  background-color: #d7e3ef;
+  box-shadow: -60px 0px 60px -30px var(--primary), 60px 0px 60px -30px var(--primary);
+}
+
+.review3 {
+  display: flex;
+  width: 75%;
+  color: var(--light);
+  background-color: var(--primary);
+  box-shadow: -60px 0px 60px -30px var(--tertiary), 60px 0px 60px -30px var(--tertiary);
+  /* box-shadow: 40px 40px 5px var(--light); */
+  /* justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; */
+  /* padding: 25px;
+  margin-bottom: 35px; */
+  /* background-color: #d7e3ef; */
+}
+
+.review-text {
+  margin: 10px;
+}
+
+/* Footer Styling */
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_text {
   text-align: center;
 }
 
-.error-text {
-  color: var(--error);
-}
-
-.cell {
-  border: #f3a847 3px solid;
-}
-
+/* Bistro Box Menus & Cart Styling */
 .menu-list {
   display: flex;
   flex-direction: column;
@@ -321,6 +458,7 @@ div.featurepic {
   background-color: var(--secondary);
   /* color: var(--dark); */
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  
 }
 
 .details-img {
@@ -334,63 +472,61 @@ div.featurepic {
   margin-top: 20px;
 }
 
-.welcome {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-}
-
-.image-div {
-  width: 50%;
-  margin-left: 5px;
-}
-
-.about-image {
-  width: 100%;
-  height: 100%;
-}
-
-.intro {
-  width: 50%;
-  margin-right: 5px;
+.card {
+  width: 25%;
   text-align: center;
-  font-family: "Scope One", sans-serif;
-  font-weight: bold;
-  background-color: #d7e3ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.error-text {
+  color: var(--error);
+}
+
+.cell {
+  border: #f3a847 3px solid;
+}
+
+/* Contact Form Styling */
+/* .contact {
+  width: 50%;
+  margin-left:
+} */
+
+/* Styling for Small Screens/Mobile Devices */
 @media screen and (max-width: 768px) {
   .card,
+  .reviews,
+  .feature,
   .image-div,
-  .intro {
+  .intro,
+  .review-section,
+  form {
     width: 100%;
+  }
+
+  .intro,
+  .image-div {
+    margin: 5px 0;
   }
 
   .menu-title {
     font-size: 38px;
   }
 
+  .review-container,
   .menu-types,
   .welcome,
   .detail-container,
-  .detail-info,
-  .detail-price {
+  .detail-info {
     flex-direction: column;
   }
 
-  .detail-price {
-    justify-content: flex-start;
+  .details-img {
+    height: 100%;
+    width: 100%;
   }
 }
-button.b1 {
-  background-color: D7E3EF;
-  color: var(--dark);
-  border: none;
-  padding: 0.25rem 1rem;
-  border-radius: 3px;
-  font-size: 1.25rem;
-  font-family: "Scope One", sans-serif;
 
-  outline: none;
-  cursor: pointer;
-  transition: box-shadow 0.2s;
-}
