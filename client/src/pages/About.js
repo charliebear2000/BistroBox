@@ -4,6 +4,7 @@ import Cart from "../components/Cart";
 import image from "../assets/front-page.jpg";
 import stew from "../assets/stew.jpg";
 import review from "../assets/review.png";
+import { Link } from "react-router-dom";
 const About = () => {
   const [reveal1, setReveal1] = useState(false);
   const [reveal2, setReveal2] = useState(false);
@@ -44,8 +45,8 @@ const About = () => {
       </div>
       <div className="homepagelink">
         <h2 className="get-started">
-          <a className="start-link" href="/home">Get Started Here!
-          </a>
+          <Link className="start-link" to="/home">Get Started Here!
+          </ Link>
         </h2>
       </div>
       <div id="faq" className="faq-section">

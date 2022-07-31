@@ -335,6 +335,7 @@ nav-tabs {
 .question {
   padding-left: 5px;
   font-weight: bold;
+  color: var(--primary);
 }
 
 /* Reviews on Homepage Styling */

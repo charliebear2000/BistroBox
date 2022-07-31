@@ -49,7 +49,8 @@ function CategoryMenu() {
     <div className="menu-list">
       <h2 className="menu-title">Explore Our Menus</h2>
       <div className="menu-types">
-        <button className="menu-btn" onClick={refreshPage}>All Menus</button>
+        <button className="menu-btn" onClick={refreshPage}>All Menus
+        </button>
         {categories.map((item) => (
           <button
             className="menu-btn"
