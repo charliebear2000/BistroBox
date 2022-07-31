@@ -304,6 +304,7 @@ nav-tabs {
 /* Frequently Asked Questions (FAQ) Styling */
 .faq-section {
   margin: 20px 0;
+  padding-left: 30px;
   font-size: 1.3rem;
   font-weight: bold;
   border-bottom: var(--light) solid 2px;
@@ -317,16 +318,25 @@ nav-tabs {
 
 .faq-btn {
   display: flex;
-  background-color: D7E3EF;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #D7E3EF;
+  background-image: radial-gradient(circle at center, #e8eff5, #c4cee7);
   color: var(--dark);
   border: none;
-  padding: 0.25rem 1rem;
-  border-radius: 3px;
+  padding: 0.15rem 1rem;
+  border-radius: 8px;
   font-size: 1.25rem;
   font-family: "Scope One", sans-serif;
   outline: none;
   cursor: pointer;
   transition: box-shadow 0.2s;
+}
+
+.question {
+  padding-left: 5px;
+  font-weight: bold;
 }
 
 /* Reviews on Homepage Styling */

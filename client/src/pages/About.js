@@ -54,7 +54,7 @@ const About = () => {
           <li className="faq-item">
             <button className="faq-btn" onClick={() => setReveal1(!reveal1)}>
               <img src={review} alt="review" />
-              <p>Which dietary restrictions can BistroBox accommodate?</p>
+              <p className="question">Which dietary restrictions can BistroBox accommodate?</p>
             </button>
             <p className="answer-reveal">
               {reveal1 &&
@@ -64,7 +64,7 @@ const About = () => {
           <li className="faq-item">
             <button className="faq-btn" onClick={() => setReveal2(!reveal2)}>
               <img src={review} alt="review" />
-              <p>What sets BistroBox apart from other meal kit services?</p>
+              <p className="question">What sets BistroBox apart from other meal kit services?</p>
             </button>
             <p className="answer-reveal">
               {reveal2 &&
@@ -74,7 +74,7 @@ const About = () => {
           <li className="faq-item">
             <button className="faq-btn" onClick={() => setReveal3(!reveal3)}>
               <img src={review} alt="review" />
-              <p>I follow a strict halal diet, will BistroBox be able to provide meals?</p>
+              <p className="question">I follow a strict halal diet, will BistroBox be able to provide meals?</p>
             </button>
             <p className="answer-reveal">
               {reveal3 &&
@@ -84,7 +84,7 @@ const About = () => {
           <li className="faq-item">
             <button className="faq-btn" onClick={() => setReveal4(!reveal4)}>
               <img src={review} alt="review" />
-              <p>How do I get started with BistroBox?</p>
+              <p className="question">How do I get started with BistroBox?</p>
             </button>
             <p className="answer-reveal">
               {reveal4 &&
