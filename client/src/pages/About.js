@@ -45,7 +45,8 @@ const About = () => {
       </div>
       <div className="homepagelink">
         <h2 className="get-started">
-          <a href="/home">Get Started!</a>
+          <a className="start-link" href="/home">Get Started Here!
+          </a>
         </h2>
       </div>
       <div id="faq" className="faq-section">
