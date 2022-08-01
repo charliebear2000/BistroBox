@@ -10,6 +10,7 @@ const About = () => {
   const [reveal2, setReveal2] = useState(false);
   const [reveal3, setReveal3] = useState(false);
   const [reveal4, setReveal4] = useState(false);
+
   return (
     <div className="aboutdiv">
       <nav>
