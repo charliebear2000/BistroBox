@@ -16,7 +16,7 @@ function CategoryMenu() {
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 
   function refreshPage() {
-    window.location.reload(false);
+    window.location.reload();
   }
 
   useEffect(() => {
