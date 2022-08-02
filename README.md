@@ -15,6 +15,9 @@
 
 This app is similar to other meal box services in that you pick meals that you will cook at home. It is unique because we sell our meals per serving instead of being locked into 2 or 4 servings. We also offer dessert choices that are single serving mug cakes. Choose as many or as few servings of each meal as you need!
 
+![Screenshot 1](./client/public/images/Screenshot1.JPG)
+
+![Screenshot 2](./client/public/images/Screenshot2.JPG)
 ---
 
 ## Installation
@@ -58,16 +61,6 @@ When you open BistroBox click on your meal selection and that will take you to a
 MIT License
 
 For more information about this license go to: [MIT License](http://choosealicense.com/licenses/mit/)
-
----
-
-## Screenshots
-
-![Screenshot 1](./client/public/images/Screenshot1.JPG)
-
----
-
-![Screenshot 2](./client/public/images/Screenshot2.JPG)
 
 ---
 
