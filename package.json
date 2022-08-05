@@ -8,14 +8,12 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build",
-    "start:dev": "webpack-dev-server"
+    "build": "cd client && npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0",
-    "webpack-dev-server": "^4.9.3"
+    "concurrently": "^5.1.0"
   }
 }
